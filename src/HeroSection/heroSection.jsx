@@ -69,7 +69,7 @@ function heroSection(){
                     <img 
                     width={400}
                     height={400}
-                    src="My-Portfolio/luka.png"
+                    src="luka.png"
                     alt="Web Developer" 
                     />
                 </div>

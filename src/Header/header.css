@@ -21,9 +21,9 @@ header{
 }
 
 .theme-toggle{
-  background: rgba(128, 128, 128, 0.634);
+  background: #808080a2;
   border: 1px solid #e7e0d0;
-  padding: 10px 13px;
+  padding: 14px 18px;
   border-radius: 2rem;
   cursor: pointer;
   color: white;
@@ -46,7 +46,7 @@ header{
 }
 
 .sun-mode{
-  color: #e7e0d0;
+  color: #ffe6b5;
 }
 
 @keyframes modeShadow{
