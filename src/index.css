@@ -1,0 +1,193 @@
+/*font: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS'; */
+/* 
+  Light-mode
+  linear-gradient(320deg, #f8faf8, #edf4ef);    background
+  Element	                                      Color
+  Background	                                  #f5f7f5
+  Secondary bg	                                #ffffff
+  Main text	                                    #1f2937
+  Secondary text	                              #4b5563
+  Accent	                                      #22c55e
+  Soft accent	                                  #bbf7d0
+  Borders	                                      #e5e7eb
+
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #d0d0d0;
+  color: white;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 12rem;
+}
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - -*/
+/* MODE SWITCH */
+
+.project-box{
+  position: relative;
+}
+
+.project-box .screen-mode{
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  right: 20px;
+  top: 10px;
+  gap: 1rem;
+  padding: 0.6rem 0.5rem;
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  border: 1px solid #00ba7060;
+}
+
+.screen-mode button{
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.screen-mode button:hover{
+  background: #16a34a;
+  color: white;
+}
+
+/* ACTIVE BUTTON */
+
+body .active-mode{
+  background: #3becabf7 !important;
+  color: #00ffae !important;
+  transform: scale(1.1);
+}
+
+.project-box {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* shared background base */
+.background-image {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+/* LIGHT MODE */
+.background-image.light {
+  background-image: url("/Modes/lightbg.png");
+  opacity: 0.7;
+}
+
+/* DARK MODE */
+.background-image.dark {
+  background-image: url("/Modes/darkbg.jpg");
+  opacity: 0.99;
+}
+
+body.dark-mode{
+  background: #00000044;
+  color: white;
+}
+
+body.light-mode{
+  background: #000000;
+  color: rgb(114, 114, 114);
+}
+
+
+
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+
+
+.scroller-up{
+  position: fixed;
+  display: block;
+  background: #474747f0;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 1rem 1.1rem;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 100;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+body.light-mode .scroller-up{
+  color: #00d084;
+  background: #e2e2e2f0;
+}
+
+body.light-mode .scroller-up:hover{
+  color: #e8e8e8;
+  background: #00d084;
+}
+
+.scroller-up:hover{
+  background-color: #00e69d;
+  transform: scale(1.1);
+  color: white;
+}
+
+.scroller-up:active{
+  color: #464646;
+  background-color: white;
+  transform: scale(0.95);
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - -*/
+/*RESPONSIVE MODE*/
+
+@media screen and (max-width: 768px){
+  .project-box .screen-mode{
+    right: 300px;
+    top: 10px;
+    gap: 0.5rem;
+  }
+
+  body.light-mode header .burger-menu{
+    background: #dcdcdc;
+  }
+
+  body.light-mode header .burger{
+    color: #464646;
+  }
+
+  .scroller-up{
+    display: none;
+  }
+
+  body.light-mode {
+    background: url("/Modes/light-mode.jpeg");
+  }
+  body.dark-mode{
+    background: url("/Modes/dark-mode.jpeg");
+  }
+}
+

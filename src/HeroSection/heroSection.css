@@ -1,0 +1,349 @@
+.section-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 8rem;
+  padding: 1rem 4rem;
+}
+
+.hero-badge{
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  color: #00ff99;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0px 30px;
+}
+
+.description h1{
+  font-size: 2.5rem;
+  color: #00ff99;
+  line-height: 1.1;
+}
+
+.description p{
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS';;
+  max-width: 40rem;
+  line-height: 1.7;
+  color: white;
+  min-height: 5rem;
+  max-width: 35rem;
+}
+
+.tech-stack{
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.tech-stack span{
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #d5d5d5;
+  font-size: 0.85rem;
+  backdrop-filter: blur(10px);
+}
+
+/*Buttons */
+
+.hero-buttons{
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.hero-buttons a{
+  text-decoration: none;
+}
+
+.hero-buttons a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* smooth animation */
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+/* when hovering the button */
+a:hover .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.description a{
+  border: none;
+  font-size: 0.9rem;
+  background-color: #00ba70;
+  text-align: center;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS';
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,255,153,0.15);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.description a:last-child{
+  background-color: #262626;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.description a:last-child:hover{
+  background-color: #464646;
+  transform: scale(1.07);
+}
+
+.description a:hover{
+  cursor: pointer;
+  background-color: #00ff99;
+  transform: scale(1.07);
+}
+
+.description a:active{
+  background-color: #00ba6f;
+  transform: scale(1.01);
+}
+
+.luka-Kartvelishvili{
+  position: relative;
+  border-radius: 40px;
+  overflow: hidden;
+  background: rgba(74, 118, 78, 0.141);
+  border: 1px solid rgba(0, 75, 10, 0.293);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0,255,153,0.12);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-12px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.description > *{
+  animation: reveal 0.8s ease forwards;
+  opacity: 0;
+}
+
+.description > *:nth-child(1){
+  animation-delay: 0.2s;
+}
+
+.description > *:nth-child(2){
+  animation-delay: 0.4s;
+}
+
+.description > *:nth-child(3){
+  animation-delay: 0.6s;
+}
+
+@keyframes reveal{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Light-mode*/
+body.light-mode .description h1,
+body.light-mode .description p,
+body.light-mode .arrow,
+body.light-mode .project-content p,
+body.light-mode .section-header,
+body.light-mode .section-header p,
+body.light-mode .tech-stack span{
+  color: #3d3d3d;
+}
+
+body.light-mode .hero-badge{
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #16a34a;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+body.light-mode .tech-stack span{
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: #444;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+}
+
+body.light-mode .luka-Kartvelishvili{
+  background: rgba(184, 255, 179, 0.193);
+  border: 2px solid rgba(182, 255, 197, 0.579);
+  backdrop-filter: blur(8px);
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.08),
+  0 0 30px rgba(0,255,153,0.08);
+}
+
+body.light-mode .description button:last-child{
+  background: #ececec;
+  color: #222;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light-mode .description button:last-child:hover{
+  background: #dcdcdc;
+}
+
+body.light-mode .description button{
+  box-shadow:
+  0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* glow effects */
+
+body.light-mode .section-1::before{
+  opacity: 0.12;
+}
+
+body.light-mode .section-1::after{
+  opacity: 0.08;
+}
+
+
+@media screen and (max-width: 768px) {
+  .section-1{
+    flex-direction: column-reverse;
+    margin: 5rem 0px 0px 0px;
+    padding: 0;
+    gap: 0;
+    background: transparent;
+  }
+
+  .hero-badge{
+    margin: 0;
+  }
+
+  .hero-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10rem;
+  }
+
+  .description{
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+
+  .description h1{
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .description p{
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+
+  .luka-Kartvelishvili{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 4.5rem;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  .luka-Kartvelishvili img{
+    width: 100%;
+    height: auto;
+    background: #bcffc241;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+  .section-1{
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+    background: transparent;
+  }
+
+  .description{
+    padding: 0;
+    max-width: 28rem;
+  }
+
+  .description h1{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .description p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    min-height: 2rem;
+  }
+
+  .hero-badge{
+    margin: 0;
+  }
+
+  .hero-buttons{
+    padding-top: 2rem;
+  }
+
+  .description button{
+    padding: 0.9rem 2rem;
+  }
+
+  .luka-Kartvelishvili{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 1px;
+  }
+
+  .luka-Kartvelishvili img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arrow-icon{
+    display: none;
+  }
+
+}
