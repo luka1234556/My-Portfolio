@@ -1,5 +1,5 @@
 import "./index.css"
-import Lenis from 'Lenis'
+import Lenis from "lenis";
 import { useState, useEffect } from "react";
 import { PiArrowFatLinesUpFill } from "react-icons/pi";
 import Header from "./Header/header"
