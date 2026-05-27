@@ -69,7 +69,7 @@ function heroSection(){
                     <img 
                     width={400}
                     height={400}
-                    src="luka.png"
+                    src={import.meta.env.BASE_URL + "Me/luka.png"}
                     alt="Web Developer" 
                     />
                 </div>

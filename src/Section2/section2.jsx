@@ -18,10 +18,10 @@ function Section2(){
             github: "https://github.com/luka1234556/CodeMeter",
 
             images: [
-                "My-Portfolio/CodeMeter/Image-1.png",
-                "My-Portfolio/CodeMeter/Image-2.png",
-                "My-Portfolio/CodeMeter/Image-3.png",
-                "My-Portfolio/CodeMeter/Image-4.png",
+                "/CodeMeter/Image-1.png",
+                "/CodeMeter/Image-2.png",
+                "/CodeMeter/Image-3.png",
+                "/CodeMeter/Image-4.png",
             ],
         },
 
@@ -33,10 +33,10 @@ function Section2(){
             github: "https://github.com/luka1234556/CodeMeter",
 
             images: [
-                "My-Portfolio/FigmaToHtml/Image1.png",
-                "My-Portfolio/FigmaToHtml/Image2.png",
-                "My-Portfolio/FigmaToHtml/Image3.png",
-                "My-Portfolio/FigmaToHtml/Image4.png",
+                "/FigmaToHtml/Image1.png",
+                "/FigmaToHtml/Image2.png",
+                "/FigmaToHtml/Image3.png",
+                "/FigmaToHtml/Image4.png",
             ],
         },
 
@@ -48,10 +48,10 @@ function Section2(){
             github: "https://github.com/luka1234556/movie-project",
 
             images: [
-                "My-Portfolio/APIMovies/pic1.png",
-                "My-Portfolio/APIMovies/pic2.png",
-                "My-Portfolio/APIMovies/pic3.png",
-                "My-Portfolio/APIMovies/pic4.png",
+                "/APIMovies/pic1.png",
+                "/APIMovies/pic2.png",
+                "/APIMovies/pic3.png",
+                "/APIMovies/pic4.png",
             ],
         },
 
@@ -63,10 +63,10 @@ function Section2(){
             github: "https://github.com/luka1234556/project_pspace",
 
             images: [
-                "My-Portfolio/PSpace/pic-1.png",
-                "My-Portfolio/PSpace/pic-2.png",
-                "My-Portfolio/PSpace/pic-3.png",
-                "My-Portfolio/PSpace/pic-4.png",
+                "/PSpace/pic-1.png",
+                "/PSpace/pic-2.png",
+                "/PSpace/pic-3.png",
+                "/PSpace/pic-4.png",
             ],
         },
     ];
@@ -213,7 +213,7 @@ function Section2(){
                                 </button>
 
                                 <img
-                                src={project.images[currentImage[projectIndex]]}
+                                src={import.meta.env.BASE_URL + project.images[currentImage[projectIndex]]}
                                 alt={project.title}
                                 className="imagebox-1"
                                 onClick={() => {
@@ -310,7 +310,7 @@ function Section2(){
                         </button>
 
                         <img
-                        src={projects[fullscreen].images[currentImage[fullscreen]]}
+                        src={import.meta.env.BASE_URL + projects[fullscreen].images[currentImage[fullscreen]]}
                         className="fullscreen-image"
                         onClick={(e) => e.stopPropagation()}
                         loading="lazy"
