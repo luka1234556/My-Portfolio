@@ -151,9 +151,9 @@ function Section5(){
 
             <div className="images">
                 {[
-                    { source: "/Me/img-1.jpg", alt: "Luka portrait 1" },
-                    { source: "/Me/img-2.png", alt: "Luka portrait 2" },
-                    { source: "/Me/img-3.png", alt: "Luka portrait 3" }
+                    { source: "My-Portfolio/Me/img-1.jpg", alt: "Luka portrait 1" },
+                    { source: "My-Portfolio/Me/img-2.png", alt: "Luka portrait 2" },
+                    { source: "My-Portfolio/Me/img-3.png", alt: "Luka portrait 3" }
                 ].map((img, index) => (
                      <div className="image-frame" key={index}>
                         <img

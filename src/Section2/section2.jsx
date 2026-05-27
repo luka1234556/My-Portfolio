@@ -18,10 +18,10 @@ function Section2(){
             github: "https://github.com/luka1234556/CodeMeter",
 
             images: [
-                "/CodeMeter/Image-1.png",
-                "/CodeMeter/Image-2.png",
-                "/CodeMeter/Image-3.png",
-                "/CodeMeter/Image-4.png",
+                "My-Portfolio/CodeMeter/Image-1.png",
+                "My-Portfolio/CodeMeter/Image-2.png",
+                "My-Portfolio/CodeMeter/Image-3.png",
+                "My-Portfolio/CodeMeter/Image-4.png",
             ],
         },
 
@@ -33,10 +33,10 @@ function Section2(){
             github: "https://github.com/luka1234556/CodeMeter",
 
             images: [
-                "/FigmaToHtml/Image1.png",
-                "/FigmaToHtml/Image2.png",
-                "/FigmaToHtml/Image3.png",
-                "/FigmaToHtml/Image4.png",
+                "My-Portfolio/FigmaToHtml/Image1.png",
+                "My-Portfolio/FigmaToHtml/Image2.png",
+                "My-Portfolio/FigmaToHtml/Image3.png",
+                "My-Portfolio/FigmaToHtml/Image4.png",
             ],
         },
 
@@ -48,10 +48,10 @@ function Section2(){
             github: "https://github.com/luka1234556/movie-project",
 
             images: [
-                "/APIMovies/pic1.png",
-                "/APIMovies/pic2.png",
-                "/APIMovies/pic3.png",
-                "/APIMovies/pic4.png",
+                "My-Portfolio/APIMovies/pic1.png",
+                "My-Portfolio/APIMovies/pic2.png",
+                "My-Portfolio/APIMovies/pic3.png",
+                "My-Portfolio/APIMovies/pic4.png",
             ],
         },
 
@@ -63,10 +63,10 @@ function Section2(){
             github: "https://github.com/luka1234556/project_pspace",
 
             images: [
-                "/PSpace/pic-1.png",
-                "/PSpace/pic-2.png",
-                "/PSpace/pic-3.png",
-                "/PSpace/pic-4.png",
+                "My-Portfolio/PSpace/pic-1.png",
+                "My-Portfolio/PSpace/pic-2.png",
+                "My-Portfolio/PSpace/pic-3.png",
+                "My-Portfolio/PSpace/pic-4.png",
             ],
         },
     ];
