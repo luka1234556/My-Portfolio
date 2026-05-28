@@ -354,7 +354,7 @@ body.light-mode .image-frame:nth-child(3){
     }
 
     .section5 h2{
-        font-size: 2.4rem;
+        font-size: 2.3rem;
     }
     .section5 p{
         font-size: 0.8rem;
@@ -365,15 +365,6 @@ body.light-mode .image-frame:nth-child(3){
     }
 
     .images{
-        gap: .7rem;
-        max-width: 40rem;
-    }
-
-    .image-frame:nth-child(1), .image-frame:nth-child(2), .image-frame:nth-child(3){
-        animation: none;
-    }
-
-    .luka-dev:nth-child(1), .luka-dev:nth-child(2), .luka-dev:nth-child(3){
-        width: 8rem;
+        display: none;
     }
 }

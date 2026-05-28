@@ -7,7 +7,7 @@ import { BsLightningChargeFill } from "react-icons/bs";
 import { IoClose } from "react-icons/io5";
 import { MdRocketLaunch, MdEmail } from "react-icons/md";
 import { PiSealWarningLight } from "react-icons/pi";
-
+import { HiMiniCpuChip } from "react-icons/hi2";
 
 function Section6() {
     const [message, setMessage] = useState("");
@@ -16,6 +16,7 @@ function Section6() {
     const [submitted, setSubmitted] = useState(false);
     const [warning, setWarning] = useState("");
     const [loading, setLoading] = useState(false);
+    const [showHelper, setShowHelper] = useState(false);
 
     const formRef = useRef();
 
@@ -100,7 +101,48 @@ function Section6() {
         className="contact-box"
         onSubmit={handleSubmit}
         >
-            
+            <div className="helper-widget">
+                <button
+                type="button"
+                className="helper-toggle"
+                onClick={() => setShowHelper(!showHelper)}
+                >
+                    <img 
+                    src={import.meta.env.BASE_URL + "kitty.png"}
+                    alt="Cute kitty" />
+
+                    <span className="helper-alert">
+                        !
+                    </span>
+                </button>
+
+                {showHelper && (
+                    <div className="helper-popup">
+                        <button
+                        type="button"
+                        className="helper-close"
+                        onClick={() => setShowHelper(false)}
+                        >
+                            <IoClose />
+                        </button>
+
+                        <h4>
+                            Quick Tips 🐾
+                        </h4>
+
+                        <ul>
+                            <li>Select at least 1 hashtag</li>
+                            <li>Choose your preferred contact method</li>
+                            <li>Describe the issue or project</li>
+                        </ul>
+
+                        <p>
+                            The more details you provide, the better I can help.
+                        </p>
+                    </div>
+                    )}
+            </div>
+
             {submitted && (
                 <div className="sub-box">
                     <div className="success-card">

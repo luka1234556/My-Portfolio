@@ -17,16 +17,20 @@ function Header({ darkMode, setDarkMode }){
             <nav className="header-container">
                 <ul className="screen-heading">
                     {[
-                        { text: "Projects", link: "#projects" },
-                        { text: "Experience", link: "#skills" },
-                        { text: "More", link: "#beyond" },
-                        { text: "Contact", link: "#contact" },
+                        { text: "Projects", icon: <FaLaptopCode />, link: "#projects" },
+                        { text: "Experience", icon: <RiCodeSSlashFill />, link: "#skills" },
+                        { text: "More", icon: <IoSparkles />, link: "#beyond" },
+                        { text: "Contact", icon: <FiSend />, link: "#contact" },
                     ].map((links, index) => (
                         <li key={index}>
-                            <a  
-                            href={links.link} 
-                            rel="noopener noreferrer">
-                                {links.text}
+                            <a href={links.link}>
+                                <span className="nav-text">
+                                    {links.text}
+                                </span>
+
+                                <span className="nav-icon">
+                                    {links.icon}
+                                </span>
                             </a>
                         </li>
                     ))}

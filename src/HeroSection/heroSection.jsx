@@ -29,7 +29,8 @@ function heroSection(){
                 <div>
                     <div className="description">
                         <div className="hero-badge">
-                            AVAILABLE FOR FREELANCE
+                            <span className="hero-online" />
+                            <h4>AVAILABLE FOR FREELANCE</h4>
                         </div>
 
                         <h1>
@@ -66,12 +67,12 @@ function heroSection(){
                 </div>
 
                 <div className="luka-Kartvelishvili">
-                    <img 
-                    width={400}
-                    height={400}
-                    src={import.meta.env.BASE_URL + "Me/luka.png"}
-                    alt="Web Developer" 
-                    />
+                    <div className="image-wrapper">
+                        <img 
+                        src={import.meta.env.BASE_URL + "Me/luka.png"}
+                        alt="Web Developer"
+                        />
+                    </div>
                 </div>
             </section>
         </>

@@ -21,8 +21,8 @@ header{
 }
 
 .theme-toggle{
-  background: #808080a2;
-  border: 1px solid #e7e0d0;
+  background: #8080803d;
+  border: 1px solid #e7e0d03f;
   padding: 14px 18px;
   border-radius: 2rem;
   cursor: pointer;
@@ -42,11 +42,11 @@ header{
 }
 
 .moon-mode{
-  color: #434343;
+  color: #c8ffe9;
 }
 
 .sun-mode{
-  color: #ffe6b5;
+  color: #25f19f;
 }
 
 @keyframes modeShadow{
@@ -112,6 +112,10 @@ header .screen-heading li a:hover::after {
   display: none;
 }
 
+.nav-icon{
+  display: none;
+}
+
 /* Light-mode */
 
 body.light-mode .screen-mode, body.light-mode .mobile-heading, body.light-mode .screen-heading{
@@ -124,19 +128,67 @@ body.light-mode .screen-heading a{
 }
 
 body.light-mode .mobile-icon-nav{
-  background-color: rgba(240, 248, 255, 0.645);
+  background-color: #f0f8ff63;
   backdrop-filter: blur(15px);
 }
 
 body.light-mode .theme-toggle{
+  background: #f0f8ff53;;
   border: 1px solid rgb(122, 122, 122);
 }
+
 body.light-mode .theme-toggle:hover{
   border: 1px solid #88f6ca;
 }
 
 /* Responsive zone */
 
+@media screen and (min-width: 769px) and (max-width: 1200px){
+
+  .header-container{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: fixed;
+    top: 5rem;
+    right: 0;
+  }
+
+  .screen-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 10px 30px 12px 15px;
+    border-radius: 12px 0px 0px 12px ;
+  }
+
+  /* hide text */
+  .nav-text{
+    display: none;
+  }
+
+  /* show icons */
+  .nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #a3f7d5;
+  }
+  body.light-mode .nav-icon{
+    color: #005c37;
+  }
+
+  .screen-heading li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-toggle{
+    padding: 8px 12px;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -169,6 +221,10 @@ body.light-mode .theme-toggle:hover{
   .mobile-icon-nav ul svg{
     font-size: 1.4rem;
     color: #00ba6f;
+  }
+
+  .header-right .theme-toggle{
+    padding: 0.5rem 0.7rem; 
   }
   
 }

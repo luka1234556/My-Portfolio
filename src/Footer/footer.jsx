@@ -109,7 +109,7 @@ function Footer() {
                 rel={links.rel}
                 target="_blank"
                 href={links.link}>
-                    {links.icon}
+                  {links.icon}
                 </a>
             ))}
 

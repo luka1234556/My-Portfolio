@@ -33,6 +33,11 @@ footer {
   cursor: pointer;
 }
 
+.at-top button:hover{
+  color: #16a34a;
+  transform: translateY(-3px);
+}
+
 
 /* MAIN GRID */
 .footer-container {
@@ -130,15 +135,14 @@ body.light-mode footer{
 /* TOP BUTTON */
 
 body.light-mode .at-top button{
-  color: #4b5563;
+  color: #1f2937;
   transition:
   transform 0.3s ease,
   color 0.3s ease;
 }
 
 body.light-mode .at-top button:hover{
-  color: #16a34a;
-  transform: translateY(-3px);
+  color: #0baa5b;
 }
 
 /* GRID */
@@ -240,6 +244,7 @@ body.light-mode .footer-bottom{
 @media screen and (max-width: 690px) {
   footer {
     padding: 1rem 2rem;
+    margin: 5px;
   }
 
   .footer-container {

@@ -470,6 +470,10 @@ body.light-mode .section-header::after{
     padding: 4rem 1.2rem;
   }
 
+  .section-header{
+    padding: 0px 6px 0px 6px;
+  }
+
   /* IMAGE AREA */
   .project-images {
     display: flex;
