@@ -361,7 +361,58 @@ body.light-mode .section-1::after{
 }
 
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 370px){
+  
+  .section-1{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 30px 5px 5px 5px;
+  }
+  
+  .description h1{
+    font-size: 1rem;
+  }
+
+  .description p{
+    font-size: 0.6rem;
+    min-height: 12px;
+    max-height: 12px;
+  }
+
+  .description h4{
+    font-size: 7px;
+  }
+
+  .tech-stack{
+    gap: 2px;
+  }
+  .tech-stack span{
+    font-size: 8px;
+  }
+
+  .hero-buttons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin: 0px 10px 0px 10px;
+  }
+  .hero-buttons a{
+    font-size: 12px;
+    padding: 15px 25px; 
+  }
+
+  .luka-Kartvelishvili{
+    width: 240px;
+    height: 240px;
+    padding-bottom: 0px;
+  }
+}
+
+
+@media (min-width: 371px) and (max-width: 768px) {
   .section-1{
     flex-direction: column-reverse;
     margin: 5rem 0px 0px 0px;
@@ -461,8 +512,8 @@ body.light-mode .section-1::after{
   }
 
   .luka-Kartvelishvili{
-    width: 18rem;
-    height: 18rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 1px;
   }
 

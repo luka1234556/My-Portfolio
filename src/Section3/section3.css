@@ -180,7 +180,23 @@ body.light-mode .skill-icon span{
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 370px){
+  .skills-header h2{
+    font-size: 1.5rem;
+  }
+  .skills-header P{
+    font-size: 0.7rem;
+  }
+
+  .skills-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 10px 0px 10px;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 768px){
 
   .skills-section{
     padding: 6rem 1rem;

@@ -89,7 +89,7 @@ function Section3() {
                 <h2>Technologies I Work With</h2>
 
                 <p>
-                Tools and technologies I use to build modern web experiences.
+                    Tools and technologies I use to build modern web experiences.
                 </p>
             </div>
 

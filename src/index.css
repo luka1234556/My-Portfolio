@@ -127,22 +127,12 @@ body.light-mode{
   color: rgb(255, 255, 255);
   border: none;
   padding: 1rem 1.1rem;
-  right: 3rem;
-  bottom: 3rem;
+  right: 1.5rem;
+  bottom: 2rem;
   z-index: 100;
   border-radius: 100%;
   cursor: pointer;
   transition: transform 0.2s ease;
-}
-
-body.light-mode .scroller-up{
-  color: #00d084;
-  background: #e2e2e2f0;
-}
-
-body.light-mode .scroller-up:hover{
-  color: #e8e8e8;
-  background: #00d084;
 }
 
 .scroller-up:hover{
@@ -155,6 +145,16 @@ body.light-mode .scroller-up:hover{
   color: #464646;
   background-color: white;
   transform: scale(0.95);
+}
+
+body.light-mode .scroller-up{
+  color: #00d084;
+  background: #e2e2e2f0;
+}
+
+body.light-mode .scroller-up:hover{
+  color: #e8e8e8;
+  background: #00d084;
 }
 
 /*- - - - - - - - - - - - - - - - - - - - - - - -*/

@@ -456,7 +456,52 @@ body.light-mode .section-header::after{
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 370px){
+  .section-header h2{
+    font-size: 2rem;
+  }
+  .section-header P{
+    font-size: 0.7rem;
+  }
+
+  .project-showcase{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-images img{
+    min-width: 280px;
+    max-width: 300px;
+  }
+
+  .tablet-btn, .arrow{
+    display: none;
+  }
+
+  .project-content h3{
+    font-size: 2rem;
+  }
+  .project-content p{
+    font-size: 0.7rem;
+  }
+
+  .tech ul {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tech ul li{
+    font-size: 9px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (min-width: 371px) and (max-width: 768px) {
 
   /* BLOCK FULLSCREEN COMPLETELY */
   .fullscreen-overlay {

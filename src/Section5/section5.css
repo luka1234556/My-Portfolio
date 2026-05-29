@@ -368,3 +368,20 @@ body.light-mode .image-frame:nth-child(3){
         display: none;
     }
 }
+
+@media (max-width: 370px) {
+    
+    .time{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .time-card p{
+        font-size: 0.8rem;
+        padding-left: 1.8rem;
+    }
+
+    .section5-content h2{
+        font-size: 1.6rem;
+    }
+}
